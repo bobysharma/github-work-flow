@@ -1,0 +1,14 @@
+name: third-workflow
+on: push
+jobs:
+  first-job:
+    run-on: ubuntu-22.04
+      steps:
+        - name: github_third
+          run: echo "hello github"
+  first-job:
+    run-on: ubuntu-22.04
+      steps:
+        - name: github_third
+          run: echo "hello github"
+        
