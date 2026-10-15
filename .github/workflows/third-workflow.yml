@@ -1,7 +1,7 @@
 name: third-workflow
 on: 
-  push
-  workflow_dispatch
+  push:
+  workflow_dispatch:
 jobs:
   first-job:
     runs-on: ubuntu-22.04
