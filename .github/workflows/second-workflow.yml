@@ -1,0 +1,11 @@
+name: second_workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+      runs-on: ubuntu-22.04
+      steps:
+      - name: githubAction second
+        run: echo"github console"
+      - name: second console
+       run: echo"github console"
+   
