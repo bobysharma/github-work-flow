@@ -1,0 +1,13 @@
+name: first workflow
+on: workflow_dispatch
+jobs:
+  first-jobs:
+     runs-on: ubuntu-22.04
+     steps:
+      - name: Hello Github Action
+        run: echo "this is the first workflow"
+      - name: Bye Github Action
+        run: echo "this is the first workflow"
+      
+         
+  
