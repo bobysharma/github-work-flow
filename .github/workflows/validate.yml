@@ -15,4 +15,21 @@ jobs:
     - name: code checkjs
       run: node --check script.js
 
+  validate-html:
+    runs-on: ubuntu-latest
+    steps:
+    - name: get_repo
+      uses: actions/checkout@v4
+
+    - name: validate html file
+      run: test -f firsthtml.html
+ validatehtml-code:
+    # needs: [validate,validate-html]
+    runs-on: ubuntu-latest
+    steps:
+      - name: check html code
+        run: npx htmlhint firsthtml.html
+      - name: check javascript code
+        run: node --check script.js
+
 
