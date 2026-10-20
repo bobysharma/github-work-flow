@@ -24,7 +24,7 @@ jobs:
     - name: validate html file
       run: test -f firsthtml.html
   validatehtml-code:
-    # needs: [validate,validate-html]
+    needs: [validate,validate-html]
     runs-on: ubuntu-latest
     steps:
       - name:  download-data
