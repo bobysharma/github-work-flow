@@ -1,5 +1,10 @@
 name: first workflow
-on: workflow_dispatch
+on: workflow_run:
+      workflows:[validate]
+      types:
+        - completed
+
+
 jobs:
   first-jobs:
      runs-on: ubuntu-22.04
