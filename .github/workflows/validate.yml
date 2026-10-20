@@ -27,6 +27,8 @@ jobs:
     # needs: [validate,validate-html]
     runs-on: ubuntu-latest
     steps:
+      - name:  download-data
+        uses: actions/checkout@v4
       - name: check html code
         run: npx htmlhint firsthtml.html
       - name: check javascript code
